@@ -1,0 +1,94 @@
+/* Home.css */
+
+/* Container for the home component */
+.home {
+    padding: 20px;
+  }
+  
+  /* Flex container for buttons */
+  .button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below buttons */
+  }
+  
+  /* Style for dropdown toggle buttons */
+  .dropdown-toggle {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for dropdown menu */
+  .dropdown-menu {
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Positioning can be adjusted as needed */
+    z-index: 1000; /* Ensure dropdown appears above other elements */
+  }
+  
+  /* Style for dropdown menu items */
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  /* Style for dropdown menu links */
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 0;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home {
+      padding: 10px;
+    }
+  
+    .dropdown-toggle {
+      font-size: 14px;
+    }
+  }
+
+  .home {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .section {
+    width: 100%;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-container{
+    justify-content:center;
+}
+ul.dropdown-menu {
+  width: max-content;
+  display: flex;
+  gap: 40px;
+  margin-top: 180px;
+}

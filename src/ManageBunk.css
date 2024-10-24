@@ -1,0 +1,107 @@
+/* ManageBunk.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.manage-bunk-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bunk-list {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bunk-list:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  margin: 0 0 10px;
+  color: #007BFF;
+}
+
+p {
+  margin: 8px 0;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.manage-bunk-list input {
+  width: calc(100% - 22px);
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.manage-bunk-list input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+
+
+.manage-bunk-list input[type="number"]::-webkit-outer-spin-button,
+.manage-bunk-list input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.manage-bunk-list a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+  overflow-wrap: break-word;
+}
+
+.manage-bunk-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.edit-container {
+  margin-top: 15px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 5px;
+}
+
+.edit-container input {
+  margin-top: 10px;
+}

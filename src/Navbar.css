@@ -1,0 +1,151 @@
+.navbar{
+    padding: 1px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    width: 1px;
+    height: 100px;
+    
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #4de00a;
+    font-size: 18px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #4de00a;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+   
+  .navbar button:hover{
+    background-color: #fff4f2;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.narbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color:#4de00a ;
+    border-radius: 5px;
+    top: 0px;
+    left: 10px;
+}
+@media (max-width:1050px) {
+    .navbar .logo{
+    width: 40px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+@media (max-width:900px) {
+    .navbar .logo{
+    width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:900px) {
+    .navbar-menu{
+       display: none;
+    }
+    
+}
+.navbar .logo {
+    width: 120px;
+}
+.navbar .logo {
+    top: 0px;
+    height: 93px;
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 5s;
+}
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 20%;
+    }
+    100% {
+        left: 0;    
+    }
+}
+.navbar-menu a {
+    background:#fff;
+    padding:4px 15px;
+    border-radius:25px;
+    border:2px solid #4de00a;
+    color:#4de00a;
+    outline: none;
+    text-decoration: none;
+}
+.navbar-menu a.active{
+    background: #4de00a;
+    color:#fff;
+    border-bottom-color:#4de00a;
+}

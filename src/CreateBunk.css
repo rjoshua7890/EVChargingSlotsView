@@ -1,0 +1,76 @@
+/* CreateBunk.css */
+
+/* Container for the form */
+.create-bunk-form {
+  max-width: 400px; /* Set a max width for the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px; /* Padding inside the form */
+  border: 1px solid #ccc; /* Light border for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Title styling */
+.create-bunk-form h2 {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333; /* Dark text color */
+}
+
+/* Input styling */
+.create-bunk-form input {
+  padding: 10px; /* Padding inside inputs */
+  margin: 10px 0; /* Space between inputs */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  width: calc(100% - 24px);
+  
+}
+
+/* Focus styling for inputs */
+.create-bunk-form input:focus {
+  border-color: #218838; /* Darker green on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Valid input styling */
+.create-bunk-form input.valid {
+  border-color: #28a745; /* Green border for valid input */
+}
+
+/* Button styling */
+.create-bunk-form button {
+  width: 100%; /* Full width of the container */
+  padding: 10px; /* Padding inside button */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.create-bunk-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .create-bunk-form {
+    padding: 15px; /* Adjust padding on smaller screens */
+  }
+
+  .create-bunk-form h2 {
+    font-size: 20px; /* Adjust title size */
+  }
+
+  .create-bunk-form input, .create-bunk-form button {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+.create-bunk-form input:focus{
+  border: 2px solid #28a745;
+}
